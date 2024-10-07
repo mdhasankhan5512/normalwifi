@@ -8,7 +8,7 @@ uci -q delete network.hotspot
 uci set network.hotspot="interface"
 uci set network.hotspot.proto="static"
 uci set network.hotspot.device="br-hotspot"
-uci set network.hotspot.ipaddr="192.168.1.1/24"
+uci set network.hotspot.ipaddr="10.0.50.1/24"
 uci commit network
 service network restart
 sleep 2
